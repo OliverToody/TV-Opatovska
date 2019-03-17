@@ -1,0 +1,80 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+body .info-panel-1 {
+  background: #FFB74D;
+}
+
+body .info-panel-1 .time {
+  padding-top: 20px;
+  text-align: center;
+  height: 27vh;
+}
+
+body .info-panel-1 .time h1 {
+  font-size: 96px;
+  font-weight: 900;
+  color: dimgray;
+}
+
+body .info-panel-1 .ubian {
+  height: 73vh;
+  width: 100%;
+  border: none;
+}
+
+body .info-panel-1 .ubian body {
+  overflow: hidden;
+}
+
+body .info-panel-2 {
+  padding: 20px;
+}
+
+body .info-panel-2 h5 {
+  text-align: center;
+  font-variant: all-petite-caps;
+  font-weight: bolder;
+  color: dimgray;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+body .image-panel {
+  text-align: center;
+  padding: 40px;
+}
+
+body .info-panel-3 {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 75%;
+}
+
+body .info-panel-3 .title {
+  float: left;
+  width: 130px;
+  text-align: center;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: lightsalmon;
+  height: 50px;
+}
+
+body .info-panel-3 .marquee {
+  overflow: hidden;
+  padding: 4px;
+  background: #e0e0e0;
+  display: block;
+  color: #333340;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 40px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+/*# sourceMappingURL=style.css.map */
