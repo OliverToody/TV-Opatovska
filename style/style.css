@@ -4,8 +4,8 @@ body {
 }
 
 body .info-panel-1 {
-  background: #150578;
-  color: #150578;
+  background: #248b46;
+  color: #248b46;
 }
 
 body .info-panel-1 .time {
@@ -18,7 +18,7 @@ body .info-panel-1 .time {
 body .info-panel-1 .time h1 {
   font-size: 96px;
   font-weight: 900;
-  color: #150578;
+  color: #248b46;
 }
 
 body .info-panel-1 .ubian {
@@ -42,7 +42,7 @@ body .info-panel-2 .card {
 }
 
 body .info-panel-2 .card .card-header {
-  background: #150578;
+  background: #248b46;
 }
 
 body .info-panel-2 .card h5 {
@@ -60,8 +60,11 @@ body .image-panel {
 }
 
 body .image-panel img {
-  border: 10px solid #150578;
+  border: 10px solid white;
   border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 10px lightgray;
+          box-shadow: 0px 10px 10px lightgray;
+  width: 42vw;
 }
 
 body .info-panel-3 {
@@ -78,7 +81,7 @@ body .info-panel-3 .title {
   line-height: 50px;
   text-transform: uppercase;
   font-weight: bold;
-  background: #150578;
+  background: #248b46;
   color: white;
   height: 50px;
 }

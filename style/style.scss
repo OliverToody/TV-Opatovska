@@ -1,11 +1,13 @@
+$primary: #248b46;
+
 body {
     background: #f0f0f0;
   //  font-family: 'Poppins', sans-serif;
 
 overflow: hidden;
     .info-panel-1 {
-        background: #150578;
-        color: #150578;
+        background: $primary;
+        color: $primary;
         //border-right: 2px solid lightsalmon;
         .time {
             padding-top: 20px;
@@ -15,7 +17,7 @@ overflow: hidden;
             h1 {
                 font-size: 96px;
                 font-weight: 900;
-                color: #150578;
+                color: $primary;
 
                 //font-family: "Times New Roman", Times, serif;
             }
@@ -37,7 +39,7 @@ overflow: hidden;
             height:200px;
             box-shadow: 0px 7px 14px lightgray;
             .card-header {
-            background: #150578;
+            background: $primary;
             }
         
         h5 {
@@ -55,8 +57,10 @@ overflow: hidden;
         text-align: center;
         padding:40px;
         img {
-            border: 10px solid #150578;
+            border: 10px solid white;
             border-radius: 15px;
+            box-shadow: 0px 10px 10px lightgray;
+            width:42vw;
         }
 
     }
@@ -73,7 +77,7 @@ overflow: hidden;
                 line-height: 50px;
                 text-transform: uppercase;
                 font-weight: bold;
-                background: #150578;
+                background: $primary;
                 color: white;
                 height: 50px;
             }

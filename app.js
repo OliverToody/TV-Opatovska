@@ -37,3 +37,7 @@ function myTimer() {
   var d = new Date();
   document.getElementById("time").innerHTML = d.toLocaleTimeString().slice(0,-3);
 }
+var d = new Date();
+
+var months = ["Januára","Februára","Marca","Apríla","Mája","Júna","Júna","Augusta","Septembra","Októbra","Novembra","Decembra"];
+document.getElementById("datum").innerHTML = d.getDate() + "."+ months[d.getMonth()] + " " + d.getFullYear();
