@@ -6,29 +6,72 @@ body {
 body .info-panel-1 {
   background: #248b46;
   color: #248b46;
+  height: 100vh;
 }
 
 body .info-panel-1 .time {
-  padding-top: 20px;
+  padding: 20px;
   text-align: center;
   background: white;
-  height: 27vh;
 }
 
 body .info-panel-1 .time h1 {
-  font-size: 96px;
+  font-size: 70px;
   font-weight: 900;
   color: #248b46;
 }
 
-body .info-panel-1 .ubian {
-  height: 73vh;
-  width: 100%;
-  border: none;
+body .info-panel-1 .departures {
+  margin: 8px 0px;
 }
 
-body .info-panel-1 .ubian body {
-  overflow: hidden;
+body .info-panel-1 .departures h3 {
+  background: white;
+  text-align: center;
+  font-weight: bold;
+  font-variant: all-petite-caps;
+  padding: 10px;
+  color: black;
+}
+
+body .info-panel-1 .departures .departure {
+  background: white;
+  margin: 2px 0px;
+  padding: 7px;
+  color: black;
+}
+
+body .info-panel-1 .departures .departure h5 {
+  display: block;
+  float: left;
+  width: 40px;
+  height: 40px;
+  background: #fe575b;
+  font-weight: bold;
+  margin: 10px;
+  margin-right: 10px;
+  margin-right: 20px;
+  padding: 3px;
+  color: #fff;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 35px;
+}
+
+body .info-panel-1 .departures .departure p {
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px 5px 0px;
+}
+
+body .info-panel-1 .departures .departure h6 {
+  font-weight: bold;
+  padding-top: 7px;
+  font-size: 18px;
+}
+
+body .info-panel-1 .departures .departure .delay {
+  color: red;
 }
 
 body .info-panel-2 {

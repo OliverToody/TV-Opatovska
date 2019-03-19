@@ -1,91 +1,118 @@
 $primary: #248b46;
-
 body {
-    background: #f0f0f0;
-  //  font-family: 'Poppins', sans-serif;
-
-overflow: hidden;
+    background: #f0f0f0; //  font-family: 'Poppins', sans-serif;
+    overflow: hidden;
     .info-panel-1 {
         background: $primary;
-        color: $primary;
-        //border-right: 2px solid lightsalmon;
+        color: $primary; //border-right: 2px solid lightsalmon;
+        height: 100vh;
         .time {
-            padding-top: 20px;
+            padding: 20px;
             text-align: center;
             background: white;
-                 height: 27vh;
             h1 {
-                font-size: 96px;
+                font-size: 70px;
                 font-weight: 900;
-                color: $primary;
-
-                //font-family: "Times New Roman", Times, serif;
+                color: $primary; //font-family: "Times New Roman", Times, serif;
             }
         }
-        .ubian {
-            height: 73vh;
-            width: 100%;
-            border: none;
-            body {
-                overflow: hidden;
+        .departures {
+            margin:8px 0px;
+            h3 {
+                background:white;
+                text-align: center;
+                font-weight: bold;
+                font-variant: all-petite-caps;
+                padding:10px;
+                color:black;
+            }
+            .departure {
+                background: white;
+                margin: 2px 0px;
+                padding: 7px;
+                color: black;
+                h5 {
+                    display: block;
+                    float: left;
+                    width: 40px;
+                    height: 40px;
+                    background: #fe575b;
+                    font-weight: bold;
+                    margin: 10px;
+                    margin-right: 10px;
+                    margin-right: 20px;
+                    padding:3px;
+                    color: #fff;
+                    text-align: center;
+                    border-radius: 30px;
+                    line-height: 35px;
+                }
+                p {
+                    font-weight: bold;
+                    font-size: 14px;
+                    padding:10px 5px 0px;
+                }
+                h6 {
+                    font-weight: bold;
+                    padding-top: 7px;
+                    font-size: 18px;
+                }
+                .delay {
+                    color: red;
+
+                }
             }
         }
     }
-
     .info-panel-2 {
         //border-bottom: 1px solid lightgray;
-        padding:20px;
+        padding: 20px;
         .card {
-            height:200px;
+            height: 200px;
             box-shadow: 0px 7px 14px lightgray;
             .card-header {
-            background: $primary;
+                background: $primary;
             }
-        
-        h5 {
-            text-align: center;
-            font-variant: all-petite-caps;
-            font-weight: bolder;
-            color: white;
-            font-size:25px;
-            margin: 0px;
+            h5 {
+                text-align: center;
+                font-variant: all-petite-caps;
+                font-weight: bolder;
+                color: white;
+                font-size: 25px;
+                margin: 0px;
+            }
         }
     }
-    }
-
     .image-panel {
         text-align: center;
-        padding:40px;
+        padding: 40px;
         img {
             border: 10px solid white;
             border-radius: 15px;
             box-shadow: 0px 10px 10px lightgray;
-            width:42vw;
+            width: 42vw;
         }
-
     }
-
     .info-panel-3 {
-            position: fixed;
-            bottom: 0px;
-            right:0px;
-            width: 75%;
-            .title {
-                float: left;
-                width: 130px;
-                text-align: center;
-                line-height: 50px;
-                text-transform: uppercase;
-                font-weight: bold;
-                background: $primary;
-                color: white;
-                height: 50px;
-            }
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        width: 75%;
+        .title {
+            float: left;
+            width: 130px;
+            text-align: center;
+            line-height: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            background: $primary;
+            color: white;
+            height: 50px;
+        }
         .marquee {
-            
             overflow: hidden;
-            padding:4px;
-           background: rgb(224, 224, 224);
+            padding: 4px;
+            background: rgb(224, 224, 224);
             display: block;
             color: #333340;
             font-weight: 700;
