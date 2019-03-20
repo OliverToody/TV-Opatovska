@@ -17,12 +17,11 @@ $i++;
    // var_dump($array['timeTableLine']['lineNumber']);
    // var_dump($array2['delayMinutes']);
    // var_dump($array2['plannedDepartureTime']);
-   $time =  $array2['plannedDepartureTime'];
     $deparute = array(
         'lineNumber' => $array['timeTableLine']['lineNumber'],
         'destination' => $array['destination'],
         'delay' => $array2['delayMinutes'],
-        'departureTime' => date('H:i',$time)
+        'departureTime' => date('H:i', $array2['plannedDepartureTime'])
     );
     array_push($departures, $deparute);
    if($i == 6) {
