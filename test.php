@@ -17,7 +17,7 @@ $i++;
    // var_dump($array['timeTableLine']['lineNumber']);
    // var_dump($array2['delayMinutes']);
    // var_dump($array2['plannedDepartureTime']);
-   $time =  $array2['plannedDepartureTime'] + 3 600 000;
+   $time =  $array2['plannedDepartureTime'] + 3600000;
     $deparute = array(
         'lineNumber' => $array['timeTableLine']['lineNumber'],
         'destination' => $array['destination'],
