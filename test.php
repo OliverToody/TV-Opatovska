@@ -21,7 +21,7 @@ $i++;
         'lineNumber' => $array['timeTableLine']['lineNumber'],
         'destination' => $array['destination'],
         'delay' => $array2['delayMinutes'],
-        'departureTime' => date('H:i', $array2['plannedDepartureTime'])
+        'departureTime' => date('H:i', $array2['plannedDepartureTime']+3 600 000)
     );
     array_push($departures, $deparute);
    if($i == 6) {
