@@ -58,6 +58,7 @@
                             <div class="col col-md-4" style="text-align:center;">
                                 <h6>{{departure.departureTime}}</h6>
                                 <span class="delay" v-show="departure.delay != 0">(mešká {{departure.delay}} min.)</span>
+                                <span class="text-success" v-show="departure.delay == 0">Ide načas</span>
                             </div>
                         </div>
                     </div>
