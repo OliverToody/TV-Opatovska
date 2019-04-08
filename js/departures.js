@@ -8,7 +8,7 @@ var one = new Vue({
 
 	mounted: function(){
 	this.getDepartures();
-	setInterval(this.getDepartures, 60000);
+	setInterval(this.getDepartures, 120000);
 	},
 
 	methods: {
