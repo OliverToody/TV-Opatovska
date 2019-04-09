@@ -17,7 +17,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"
     ></link>
-
+    <link href="jquery-gallery.css" rel="stylesheet"/>
     <link
         rel="stylesheet"
         href="style/style.css"
@@ -39,8 +39,7 @@
 <body>
     <div
         class="container-fluid"
-        id="vue-app-one"
-    >
+        id="vue-app-one">
         <div class="row">
             <div class="col col-md-3 info-panel-1">
                 <div class="time">
@@ -53,10 +52,10 @@
                         <h3>Odchody autobusov</h3>
                     <div v-for="departure in departures" class="departure">
                         <div class="row">
-                            <div class="col col-md-2"><h5>{{departure.lineNumber}}</h5></div>
-                            <div class="col col-md-6"><p>{{departure.destination}}</p></div>
+                            <div class="col col-md-2"><h5 v-html="departure.lineNumber"></h5></div>
+                            <div class="col col-md-6"><p v-html="departure.destination"></p></div>
                             <div class="col col-md-4" style="text-align:center;">
-                                <h6>{{departure.departureTime}}</h6>
+                                <h6 v-html="departure.departureTime"></h6>
                                 <span class="delay" v-show="departure.delay != 0">(mešká {{departure.delay}} min.)</span>
                                 <span class="text-success" v-show="departure.delay == 0">Ide načas</span>
                             </div>
@@ -75,7 +74,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    <p>Ziadne oznamy na dnes.</p>
+                                    {{oznam}}
                                 </div>
                             </div>
                         </div>
@@ -86,8 +85,8 @@
                                     <h5>OBED DNES</h5>
                                 </div>
 
-                                <div class="card-body">
-                                    <p>Pracuje sa na tom.</p>
+                                <div class="card-body" v-html="jedalen">
+                                   
                                 </div>
                             </div>
                         </div>
@@ -95,28 +94,38 @@
                         <div class="col col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>POCASIE</h5>
+                                    <h5>POČASIE</h5>
                                 </div>
 
-                                <div class="card-body">
-                                    <p>Pracuje sa na tom.</p>
+                                <div class="card-body row">
+                                   <span  class="day-weather col-md-6">
+                                       <H6>Dnes</H6>
+                                       <img id="" v-bind:src="'http://openweathermap.org/img/w/' + weather.today.icon + '.png'" alt="Weather icon">
+                                       <br>
+                                       <b>{{weather.today.temp}} °C</b><br>
+                                   </span>
+                                   <span  class="day-weather col-md-6">
+                                        <H6>Zajtra</H6>
+                                        <img id="" v-bind:src="'http://openweathermap.org/img/w/' + weather.today.icon + '.png'" alt="Weather icon">
+                                        <br>
+                                        <b>{{weather.tomorrow.temp}} °C</b><br>
+                                    </span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="image-panel">
-                    <img
-                        src="img/demo.jpg"
-                        class="img img-responsive"
-                    >
+                <div class="image-panel gallery">
+                    <ul class="gallery-slideshow" style="margin:auto;">
+
+                    </ul>
                 </div>
 
-                <div class="info-panel-3">
+                <div class="info-panel-3" style="display: none;">
                     <div class="title">Novinky</div>
 
-                    <div
+                   <div
                         class="marquee"
                         data-duration="5000"
                         data-gap="10"
@@ -132,11 +141,7 @@
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 
-    <script
-        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
@@ -159,5 +164,6 @@
     <script src="js/vue.js"></script>
     <script src="js/axios.js"></script>
     <script src="js/departures.js"></script>
+    <script src="jquery-gallery.js"></script>
 </body>
 </html>

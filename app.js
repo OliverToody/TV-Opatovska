@@ -41,24 +41,3 @@ var d = new Date();
 
 var months = ["Januára","Februára","Marca","Apríla","Mája","Júna","Júna","Augusta","Septembra","Októbra","Novembra","Decembra"];
 document.getElementById("datum").innerHTML = d.getDate() + "."+ months[d.getMonth()] + " " + d.getFullYear();
-
-var folder = "img/";
-
-$.ajax({
-    url : folder,
-    success: function (data) {
-        $(data).find("a").attr("href", function (i, val) {
-            if( val.match(/\.(jpe?g|png|gif)$/) ) { 
-                $(".gallery ul").append( "<li><img src='"+ folder + val +"'></li>" );
-            } 
-        });
-    }
-});
-
-$(function() {
-			$('.gallery-slideshow').slideshow({
-				interval: 5000,
-				width: 900,
-				height: 600
-			});
-		});

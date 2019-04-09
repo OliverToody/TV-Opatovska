@@ -3,11 +3,15 @@ var one = new Vue({
 	el:"#vue-app-one",
 	data: {
         departures: [],
-        hi: "g"		
+				jedalen: "",
+				oznam: "Ziadne oznamy na dnes",
+				weather: []
 	},
 
 	mounted: function(){
 	this.getDepartures();
+	this.getLunch();
+	this.getWeather();
 	setInterval(this.getDepartures, 120000);
 	},
 
@@ -20,10 +24,34 @@ var one = new Vue({
 						console.log(response.data.message);
 					}
 					else{
-                        console.log(response.data);
 						one.departures = response.data;
 						
 					}
+				});
+		},
+		getLunch: function() {
+			axios.get('jedalen.php')
+				.then(function(response){
+					if(response.data.error){
+						console.log(response.data.message);
+					}
+					else{
+						one.jedalen = response.data;
+						
+					}
+				});
+		},
+		getWeather: function() {
+			axios.get('weather.php')
+				.then(function(response){
+					if(response.data.error){
+						console.log(response.data.message);
+					}
+					else{
+						one.weather = response.data;
+						
+					}
+
 				});
 		}
     }

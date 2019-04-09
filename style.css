@@ -4,8 +4,8 @@ body {
 }
 
 body .info-panel-1 {
-  background: #178f3f;
-  color: #178f3f;
+  background: #248b46;
+  color: #248b46;
   height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body .info-panel-1 .time {
 body .info-panel-1 .time h1 {
   font-size: 70px;
   font-weight: 900;
-  color: #178f3f;
+  color: #248b46;
 }
 
 body .info-panel-1 .departures {
@@ -74,19 +74,14 @@ body .info-panel-1 .departures .departure .delay {
   color: red;
 }
 
-body .info-panel-2 {
-  padding: 20px;
-}
-
 body .info-panel-2 .card {
-  height: 200px;
+  height: 230px;
   -webkit-box-shadow: 0px 7px 14px lightgray;
           box-shadow: 0px 7px 14px lightgray;
-  text-align: center;
 }
 
 body .info-panel-2 .card .card-header {
-  background: #178f3f;
+  background: #248b46;
 }
 
 body .info-panel-2 .card h5 {
@@ -98,13 +93,16 @@ body .info-panel-2 .card h5 {
   margin: 0px;
 }
 
+body .info-panel-2 .card .card-body {
+  text-align: center;
+}
+
 body .image-panel {
   text-align: center;
   padding: 40px;
 }
 
 body .image-panel img {
-  border: 10px solid white;
   border-radius: 15px;
   -webkit-box-shadow: 0px 10px 10px lightgray;
           box-shadow: 0px 10px 10px lightgray;
@@ -125,7 +123,7 @@ body .info-panel-3 .title {
   line-height: 50px;
   text-transform: uppercase;
   font-weight: bold;
-  background: #178f3f;
+  background: #248b46;
   color: white;
   height: 50px;
 }
@@ -141,13 +139,5 @@ body .info-panel-3 .marquee {
   line-height: 40px;
   text-transform: uppercase;
   vertical-align: middle;
-}
-
-.day-weather h6 {
-  font-weight: bold;
-}
-
-.day-weather b {
-  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

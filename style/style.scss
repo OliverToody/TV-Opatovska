@@ -1,4 +1,4 @@
-$primary: #248b46;
+$primary: #178f3f;
 body {
     background: #f0f0f0; //  font-family: 'Poppins', sans-serif;
     overflow: hidden;
@@ -81,6 +81,7 @@ body {
                 font-size: 25px;
                 margin: 0px;
             }
+            text-align: center;
         }
     }
     .image-panel {
@@ -121,5 +122,15 @@ body {
             text-transform: uppercase;
             vertical-align: middle;
         }
+    }
+}
+
+.day-weather {
+    h6 {
+        font-weight: bold;
+
+    }
+    b {
+        font-size: 20px;
     }
 }
