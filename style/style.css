@@ -4,8 +4,8 @@ body {
 }
 
 body .info-panel-1 {
-  background: #178f3f;
-  color: #178f3f;
+  background: #4285f4;
+  color: #4285f4;
   height: 100vh;
 }
 
@@ -13,12 +13,16 @@ body .info-panel-1 .time {
   padding: 20px;
   text-align: center;
   background: white;
+  border-radius: 21px;
+  margin: 22px auto 50px;
+  -webkit-box-shadow: 0px 2px 10px #c3c3c3;
+          box-shadow: 0px 2px 10px #c3c3c3;
 }
 
 body .info-panel-1 .time h1 {
   font-size: 70px;
   font-weight: 900;
-  color: #178f3f;
+  color: #4285f4;
 }
 
 body .info-panel-1 .departures {
@@ -31,14 +35,18 @@ body .info-panel-1 .departures h3 {
   font-weight: bold;
   font-variant: all-petite-caps;
   padding: 10px;
-  color: black;
+  border-radius: 20px;
+  color: #383838;
 }
 
 body .info-panel-1 .departures .departure {
   background: white;
-  margin: 2px 0px;
+  margin: 12px 0px;
   padding: 7px;
   color: black;
+  border-radius: 11px;
+  -webkit-box-shadow: 0px 5px 7px -3px lightgray;
+          box-shadow: 0px 5px 7px -3px lightgray;
 }
 
 body .info-panel-1 .departures .departure h5 {
@@ -59,9 +67,9 @@ body .info-panel-1 .departures .departure h5 {
 }
 
 body .info-panel-1 .departures .departure p {
-  font-weight: bold;
-  font-size: 14px;
-  padding: 10px 5px 0px;
+  font-weight: 600;
+  font-size: 19px;
+  padding: 10px 0px 0px;
 }
 
 body .info-panel-1 .departures .departure h6 {
@@ -74,6 +82,22 @@ body .info-panel-1 .departures .departure .delay {
   color: red;
 }
 
+body .info-panel-1 .departures .departure .teal {
+  background: #026553;
+}
+
+body .info-panel-1 .departures .departure .orange {
+  background: #b93b09;
+}
+
+body .info-panel-1 .departures .departure .darkblue {
+  background: #09c1f3;
+}
+
+body .info-panel-1 .departures .departure .dimgray {
+  background: #424242;
+}
+
 body .info-panel-2 {
   padding: 20px;
 }
@@ -82,11 +106,14 @@ body .info-panel-2 .card {
   height: 200px;
   -webkit-box-shadow: 0px 7px 14px lightgray;
           box-shadow: 0px 7px 14px lightgray;
+  border-radius: 30px;
   text-align: center;
 }
 
 body .info-panel-2 .card .card-header {
-  background: #178f3f;
+  background: #4285f4;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }
 
 body .info-panel-2 .card h5 {
@@ -125,7 +152,7 @@ body .info-panel-3 .title {
   line-height: 50px;
   text-transform: uppercase;
   font-weight: bold;
-  background: #178f3f;
+  background: #4285f4;
   color: white;
   height: 50px;
 }
@@ -141,6 +168,10 @@ body .info-panel-3 .marquee {
   line-height: 40px;
   text-transform: uppercase;
   vertical-align: middle;
+}
+
+.day-weather {
+  text-align: center;
 }
 
 .day-weather h6 {

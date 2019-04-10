@@ -23,6 +23,20 @@ $i++;
         'delay' => $array2['delayMinutes'],
         'departureTime' => date('H:i', $array2['plannedDepartureTime'])
     );
+
+    if($deparute['lineNumber'] == "19") {
+        $deparute['color'] = 'teal';
+    }
+    if($deparute['lineNumber'] == "52") {
+        $deparute['color'] = 'darkblue';
+    }
+    if($deparute['lineNumber'] == "31") {
+        $deparute['color'] = 'orange';
+    }
+    if($deparute['lineNumber'] == "54") {
+        $deparute['color'] = 'dimgray';
+    }
+    $deparute['destination'] = str_replace("Košice, ","", $deparute['destination']);
     array_push($departures, $deparute);
    if($i == 6) {
         break;

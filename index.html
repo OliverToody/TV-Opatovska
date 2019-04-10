@@ -43,7 +43,7 @@
         <div class="row">
             <div class="col col-md-3 info-panel-1">
                 <div class="time">
-                    <h1 id="time">00:00:00</h1>
+                    <h1 id="time">00:00</h1>
 
                     <h2 id="datum">13. Marca 2019</h2>
                 </div>
@@ -52,7 +52,7 @@
                         <h3>Odchody autobusov</h3>
                     <div v-for="departure in departures" class="departure">
                         <div class="row">
-                            <div class="col col-md-2"><h5 v-html="departure.lineNumber"></h5></div>
+                            <div class="col col-md-2"><h5 v-html="departure.lineNumber" v-bind:class="departure.color"></h5></div>
                             <div class="col col-md-6"><p v-html="departure.destination"></p></div>
                             <div class="col col-md-4" style="text-align:center;">
                                 <h6 v-html="departure.departureTime"></h6>
@@ -74,7 +74,7 @@
                                 </div>
 
                                 <div class="card-body">
-                                    {{oznam}}
+                                    <p id="oznam"></p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                         <div class="col col-md-4">
                             <div class="card">
                                 <div class="card-header">
-                                    <h5>OBED DNES</h5>
+                                    <h5>DNEŠNÝ OBED</h5>
                                 </div>
 
                                 <div class="card-body" v-html="jedalen">
@@ -106,7 +106,7 @@
                                    </span>
                                    <span  class="day-weather col-md-6">
                                         <H6>Zajtra</H6>
-                                        <img id="" v-bind:src="'http://openweathermap.org/img/w/' + weather.today.icon + '.png'" alt="Weather icon">
+                                        <img id="" v-bind:src="'http://openweathermap.org/img/w/' + weather.tomorrow.icon + '.png'" alt="Weather icon">
                                         <br>
                                         <b>{{weather.tomorrow.temp}} °C</b><br>
                                     </span>

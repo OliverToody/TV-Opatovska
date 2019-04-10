@@ -1,4 +1,5 @@
-$primary: #178f3f;
+$primary: #4285f4;
+$secondary: #666666;
 body {
     background: #f0f0f0; //  font-family: 'Poppins', sans-serif;
     overflow: hidden;
@@ -10,6 +11,9 @@ body {
             padding: 20px;
             text-align: center;
             background: white;
+            border-radius: 21px;
+            margin: 22px auto 50px;
+            box-shadow: 0px 2px 10px #c3c3c3;
             h1 {
                 font-size: 70px;
                 font-weight: 900;
@@ -24,13 +28,16 @@ body {
                 font-weight: bold;
                 font-variant: all-petite-caps;
                 padding:10px;
-                color:black;
+                border-radius: 20px;
+                color:rgb(56, 56, 56);
             }
             .departure {
                 background: white;
-                margin: 2px 0px;
-                padding: 7px;
-                color: black;
+                margin: 12px 0px;         
+                padding: 7px;            
+                color: black;              
+                border-radius: 11px;  
+                box-shadow: 0px 5px 7px -3px lightgray;
                 h5 {
                     display: block;
                     float: left;
@@ -48,9 +55,9 @@ body {
                     line-height: 35px;
                 }
                 p {
-                    font-weight: bold;
-                    font-size: 14px;
-                    padding:10px 5px 0px;
+                    font-weight: 600;
+                    font-size: 19px;
+                    padding:10px 0px 0px;
                 }
                 h6 {
                     font-weight: bold;
@@ -61,6 +68,18 @@ body {
                     color: red;
 
                 }
+                .teal {
+                    background: #026553;
+                }
+                .orange {
+                    background: rgb(185, 59, 9);
+                }
+                .darkblue {
+                    background: #09c1f3;
+                }
+                .dimgray {
+                    background: rgb(66, 66, 66);
+                }
             }
         }
     }
@@ -70,8 +89,11 @@ body {
         .card {
             height: 200px;
             box-shadow: 0px 7px 14px lightgray;
+            border-radius: 30px;
             .card-header {
                 background: $primary;
+                border-top-left-radius: 30px;
+                border-top-right-radius: 30px;
             }
             h5 {
                 text-align: center;
@@ -126,6 +148,7 @@ body {
 }
 
 .day-weather {
+    text-align: center;
     h6 {
         font-weight: bold;
 

@@ -12,6 +12,7 @@ var one = new Vue({
 	this.getDepartures();
 	this.getLunch();
 	this.getWeather();
+	this.getOznam();
 	setInterval(this.getDepartures, 120000);
 	},
 
@@ -48,11 +49,13 @@ var one = new Vue({
 						console.log(response.data.message);
 					}
 					else{
-						one.weather = response.data;
-						
+						one.weather = response.data;	
 					}
-
 				});
+		},
+		getOznam: function() {
+			$("#oznam").load("oznam.txt");
+			console.log($("#oznam").load("oznam.txt"));
 		}
     }
 

@@ -62,3 +62,6 @@ $(function() {
 				height: 600
 			});
 		});
+
+		$("#oznam").load("oznam.txt");
+		console.log($("#oznam").load("oznam.txt"));
